@@ -1,0 +1,22 @@
+<p style="float: right;"><br>
+    <br>
+    <br>
+<button mat-raised-button color="warn" (click)="newdata()"><mat-icon>add</mat-icon>NewUser</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button mat-raised-button color='primary' (click)="redirect()" ><mat-icon>login</mat-icon>Login</button>
+</p>
+<div>  
+    <div class="row">  
+      <div class="col-sm-12 btn btn-primary">  
+        Image Slider  
+      </div>  
+    </div>  
+  </div> 
+<hr style="background-color:black" />  
+<div class="row">  
+  <!-- <ngx-slick-carousel class="carousel"  #slickModal="slick-carousel" [config]="slideConfig">     -->
+    <div  *ngFor="let image of images" class="slide">  
+      <img src="{{ image.img }}" width="300px" height="300px" style="float:inline-end">  
+    </div>  
+  <!-- </ngx-slick-carousel>   -->
+</div>  
+<router-outlet></router-outlet>

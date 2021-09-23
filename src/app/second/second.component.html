@@ -1,0 +1,98 @@
+<p style="text-align: center;"><input type="text" [(ngModel)]='search' placeholder="search" required (blur)="valueafterchange($event)"></p>
+<h1>Branch Code Details:</h1>
+<div>
+<table border="2" [dataSource]='dataSource' mat-table>
+    <tr>
+        <th>branch_gid</th>
+        <th>branch_entitydetailsgid</th>
+        <th>branch_code</th>
+        <th>branch_name</th>
+        <th>branch_tanno</th>
+        <th>branch_glno</th>
+        <th>branch_stdcode</th>
+        <th>branch_inchargegid</th>
+        <th>branch_inchargename</th>
+        <th>branch_contactgid</th>
+        <th>control_office_branch</th>
+    </tr>
+    <!--<ng-container *ngFor='let r of data'>
+    <tr >
+         <td>{{r[0]}}</td>
+        <td>{{r[1]}}</td>
+        <td>{{r[2]}}</td>
+        <td>{{r[3]}}</td>
+        <td>{{r[4]}}</td>
+        <td>{{r[5]}}</td>
+        <td>{{r[6]}}</td>
+        <td>{{r[7]}}</td>
+        <td>{{r[8]}}</td>
+        <td>{{r[9]}}</td>
+        <td>{{r[10]}}</td> 
+    </tr>
+</ng-container>-->
+<ng-container matColumnDef="branch_gid">
+    <th mat-header-cell *matHeaderCellDef> branch_gid </th>
+    <td mat-cell *matCellDef="let element"> {{element.branch_gid}} </td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="branch_entitydetailsgid">
+    <th mat-header-cell *matHeaderCellDef> branch_entitydetailsgid</th>
+    <td mat-cell *matCellDef="let element"> {{element.branch_entitydetailsgid}} </td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="branch_code">
+    <th mat-header-cell *matHeaderCellDef> branch_code </th>
+    <td mat-cell *matCellDef="let element"> {{element.branch_code}} </td>
+  </ng-container>
+
+  <!-- Symbol Column  4-->
+  <ng-container matColumnDef="branch_name">
+    <th mat-header-cell *matHeaderCellDef> branch_name </th>
+    <td mat-cell *matCellDef="let element"> {{element.branch_name}} </td>
+  </ng-container>
+  <!-- Symbol Column  5-->
+  <ng-container matColumnDef="branch_tanno">
+    <th mat-header-cell *matHeaderCellDef> branch_tanno </th>
+    <td mat-cell *matCellDef="let element"> {{element.branch_tanno}} </td>
+  </ng-container>
+   <!-- Symbol Column  6-->
+   <ng-container matColumnDef="branch_glno">
+    <th mat-header-cell *matHeaderCellDef> branch_glno </th>
+    <td mat-cell *matCellDef="let element"> {{element.branch_glno}} </td>
+  </ng-container>
+   <!-- Symbol Column  7-->
+   <ng-container matColumnDef="branch_stdcode">
+    <th mat-header-cell *matHeaderCellDef> branch_stdcode </th>
+    <td mat-cell *matCellDef="let element"> {{element.branch_stdcode}} </td>
+  </ng-container>
+  <!-- Symbol Column  8-->
+  <ng-container matColumnDef="branch_inchargegid">
+    <th mat-header-cell *matHeaderCellDef> Symbol </th>
+    <td mat-cell *matCellDef="let element"> {{element.branch_inchargegid}} </td>
+  </ng-container>
+  <!-- Symbol Column  9-->
+  <ng-container matColumnDef="branch_inchargename">
+    <th mat-header-cell *matHeaderCellDef> branch_inchargename </th>
+    <td mat-cell *matCellDef="let element"> {{element.branch_inchargename}} </td>
+  </ng-container>
+  <!-- Symbol Column  10-->
+   <ng-container matColumnDef="branch_contactgid">
+    <th mat-header-cell *matHeaderCellDef> branch_contactgid </th>
+    <td mat-cell *matCellDef="let element"> {{element.branch_contactgid}} </td>
+  </ng-container> 
+  <!-- Symbol Column  11-->
+  <ng-container matColumnDef="control_office_branch">
+    <th mat-header-cell *matHeaderCellDef> control_office_branch </th>
+    <td mat-cell *matCellDef="let element"> {{element.control_office_branch}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+<mat-paginator [pageSizeOptions]="[7, 14, 21]"
+                 showFirstLastButtons 
+                 aria-label="Select page of periodic elements">
+  </mat-paginator>
+</div>

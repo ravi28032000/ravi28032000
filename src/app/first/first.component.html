@@ -1,0 +1,33 @@
+<p>
+  <button type="button" mat-raised-button color='warm' (click)="oneof()"><mat-icon>logout</mat-icon>logout</button>
+</p>
+
+<form #logic='ngForm' (ngSubmit)="onsubmit(logic)">
+  <mat-form-field appearance="fill">
+    <mat-label>Choose a date</mat-label>
+    <input matInput [matDatepicker]="Picker" [(ngModel)]='firstdate' [ngModelOptions]="{standalone: true}" name="firstdate">
+    <mat-datepicker-toggle matSuffix [for]="Picker"></mat-datepicker-toggle>
+    <mat-datepicker #Picker></mat-datepicker>
+    <input  type='time' [(ngModel)]='firsttime' name="firsttime" >
+  </mat-form-field>
+  <br>
+  FromDate:{{firstdate}}<br>
+  fromTime:{{firsttime}}
+  <br>
+  <br>
+  <mat-form-field appearance="fill">
+    <mat-label>Choose a date</mat-label>
+    <input matInput [matDatepicker]="picker" [(ngModel)]='seconddate' [ngModelOptions]="{standalone: true}" name="seconddate">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+    <input  type='time' [(ngModel)]='secondtime' name="secondtime">
+  </mat-form-field>
+  <button type="submit" >submit</button>
+  </form>
+  <br>
+  ToDate:{{seconddate}}<br>
+  ToTime:{{secondtime}}<br>
+  YEAR:=======>{{year}}<b>year</b><br>
+  MONTH:=====>{{m}}<b>month</b><br>
+  Days:=======>{{finaldy}}<b>days</b>{{finalhr}}<b>hr</b>{{minute}}<b>minute</b><br>
+  FinalHour:==>{{final}}<b>hr</b>:{{minute}}<b>minute</b>

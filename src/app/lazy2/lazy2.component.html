@@ -1,0 +1,122 @@
+<p>
+    <button mat-raised-button color="warm" (click)="generate()">Download PDF</button>
+</p>
+<p style="float: right;">
+    <button mat-raised-button color='warm' (click)='firstone()'>First</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button mat-raised-button color='warn' (click)='secondone()'>Second</button>
+</p>
+<p>lazy2 works!</p>
+
+<form [formGroup]="details"  >
+    
+    <mat-form-field>
+        <mat-label>
+            BS
+        </mat-label>
+        <input  matInput  [formControl]="bs"    [matAutocomplete]="auto1" name="bs" required>
+        <mat-autocomplete #auto1="matAutocomplete">
+    
+            <mat-option *ngFor="let i of first |async " [value]="i" (blur)="onBlurEvent(i)">{{i}}</mat-option>
+            
+        </mat-autocomplete>
+    </mat-form-field>
+    <button mat-stroked-button color="accent" (click)="one()">Load More..</button>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <mat-form-field>
+        <mat-label>
+            CC
+        </mat-label>
+        <input matInput required [formControl]="cc" name="cc"  name="cc" [matAutocomplete]="auto2" >
+        <mat-autocomplete #auto2="matAutocomplete" >
+    
+            <mat-option *ngFor="let i of second |async " [value]="i" (blur)="onBlurEvent2(i)">{{i}}</mat-option>
+            
+        </mat-autocomplete>
+    </mat-form-field>
+    <button mat-stroked-button color="accent" (click)="two()">Load More..</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <mat-form-field>
+        <mat-label>
+            BranchName
+        </mat-label>
+        <input matInput required [formControl]="branchname" name="branchname"   name="branchname" [matAutocomplete]="auto3">
+        <mat-autocomplete #auto3="matAutocomplete" >
+    
+            <mat-option *ngFor="let i of third |async " [value]="i" (blur)="onBlurEvent3(i)" >{{i}}</mat-option>
+            
+        </mat-autocomplete>
+    </mat-form-field>
+    <button mat-stroked-button color="accent" (click)="three()">Load More..</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <br>
+    <br>
+    <mat-form-field>
+        <mat-label>
+            location
+        </mat-label>
+        <input matInput required [formControl]="location" name="location"   name="location" [matAutocomplete]="auto4">
+        <mat-autocomplete #auto4="matAutocomplete" >
+    
+            <mat-option *ngFor="let i of four |async " [value]="i" (blur)="onBlurEvent4(i)">{{i}}</mat-option>
+            
+        </mat-autocomplete>
+    </mat-form-field>
+    <button mat-stroked-button color="accent" (click)="fou()">Load More..</button>
+    
+    <mat-form-field>
+        <mat-label>
+            Apcategory
+        </mat-label>
+        <input matInput required [formControl]="apcategory" name="apcategory" [matAutocomplete]="auto5">
+        <mat-autocomplete #auto5="matAutocomplete" >
+    
+            <mat-option *ngFor="let i of five |async " [value]="i"  (blur)="onBlurEvent5(i)">{{i}}</mat-option>
+            
+        </mat-autocomplete>
+    </mat-form-field>
+    <button mat-stroked-button color="accent" (click)="fi()">Load More..</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <mat-form-field>
+        <mat-label>
+            Apsub
+        </mat-label>
+        <input matInput required  [formControl]="apsub"  name="apsub" [matAutocomplete]="auto6">
+        <mat-autocomplete #auto6="matAutocomplete"   >
+    
+            <mat-option *ngFor="let i of six |async " [value]="i" (onSelectionChange)="onBlurEvent6(i)" >{{i}}</mat-option>
+            
+        </mat-autocomplete>
+    </mat-form-field>
+    <button mat-stroked-button color="accent" (click)="si()">Load More..</button>
+    <br>
+    <button mat-button color="warm" type="submit" (click)="final()">submit</button>
+</form>
+<br>
+<br>
+<button mat-raised-button color="warm" (click)="show()">Show data</button>
+<div id="convert">
+<table border="2"  >
+    <tr>
+        <th>BC</th>
+        <th>CC</th>
+        <th>Branch Name</th>
+        <th>Location</th>
+        <th>ApCategory</th>
+        <th>ApSub</th>
+    </tr>
+    <tr *ngFor="let d of data">
+    <td>{{d.bs}}</td>
+    <td>{{d.cc}}</td>
+    <td>{{d.branchname}}</td>
+    <td>{{d.location}}</td>
+    <td>{{d.apcategory}}</td>
+    <td>{{d.apsub}}</td>
+    
+
+    </tr>
+
+</table>
+</div>
+<!-- *ngIf="val" -->
+<router-outlet></router-outlet>

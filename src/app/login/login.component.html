@@ -1,0 +1,16 @@
+<p>login works!</p>
+<form [formGroup]='details' >
+    <h1><b>Login Page:</b></h1>
+    <mat-form-field>
+        <mat-label>Username</mat-label>
+        <input type="text" formControlName='username' required matInput>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <mat-label>password</mat-label>
+        <input type="password" formControlName='password' required matInput>
+    </mat-form-field>
+    <br>
+    <br>
+    <button type="submit" (click)='output()' style="float: right;">submit</button>
+</form>

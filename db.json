@@ -1,0 +1,137 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile":[ {
+    "id":1,
+    "name":"Ashock"
+    },
+    {
+      "id":2,
+      "name":"Abi"
+      },
+      {
+        "id":3,
+        "name":"Ac"
+        },
+        {
+          "id":4,
+          "name":"Ass"
+          },
+          {
+            "id":5,
+            "name":"Arun"
+            },
+            {
+              "id":6,
+              "name":"Arumugam"
+              },
+              {
+                "id":7,
+                "name":"Acknowledgement"
+                },
+                {
+                  "id":8,
+                  "name":"Aeroplane"
+                  },
+                  {
+                    "id":9,
+                    "name":"Aram"
+                    },
+                    {
+                      "id":10,
+                      "name":"Ashock-1"
+                      },
+                      {
+                        "id":11,
+                        "name":"Big"
+                        },
+                        {
+                          "id":12,
+                          "name":"Bag"
+                          },
+                          {
+                            "id":13,
+                            "name":"Bank"
+                            },
+                            {
+                              "id":14,
+                              "name":"Bear"
+                              },
+                              {
+                                "id":15,
+                                "name":"Bell"
+                                },
+                                {
+                                  "id":16,
+                                  "name":"Buffalo"
+                                  },
+                                  {
+                                    "id":17,
+                                    "name":"Bug"
+                                    },
+                                    {
+                                      "id":18,
+                                      "name":"Ball"
+                                      },
+                                      {
+                                        "id":19,
+                                        "name":"Berry"
+                                        },
+                                        {
+                                          "id":20,
+                                          "name":"Brazil"
+                                          },
+                                          {
+                                            "id":21,
+                                            "name":"car"
+                                            },
+                                            {
+                                              "id":22,
+                                              "name":"cenada"
+                                              },
+                                              {
+                                                "id":23,
+                                                "name":"camel"
+                                                },
+                                                {
+                                                  "id":24,
+                                                  "name":"cannteen"
+                                                  },
+                                                  {
+                                                    "id":25,
+                                                    "name":"can"
+                                                    },
+                                                    {
+                                                      "id":26,
+                                                      "name":"cancel"
+                                                      },{
+                                                        "id":27,
+                                                        "name":"Cigaret"
+                                                        },{
+                                                          "id":28,
+                                                          "name":"CCC"
+                                                          },{
+                                                            "id":29,
+                                                            "name":"Common"
+                                                            },{
+                                                              "id":30,
+                                                              "name":"concept"
+                                                              },{
+                                                                "id":31,
+                                                                "name":"Dear"
+                                                                }
+
+]
+}

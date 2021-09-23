@@ -1,0 +1,119 @@
+ <div class="container-fluid" style="height: 100%;">
+   <div class="row" style="background-color: antiquewhite; height: 80px;">
+     <div class="col-sm-12">
+       
+       <!-- <marquee><span  matBadge="new" matBadgeSize="small">welcome</span></marquee> -->
+       
+       <img src='assets/karurvysya.png' height="80px" width="80%">
+       <mat-expansion-panel style="float: right;">
+         <mat-expansion-panel-header>
+           <mat-panel-title><mat-icon >account_circle</mat-icon></mat-panel-title>
+           <mat-panel-description>{{name | uppercase}}</mat-panel-description>
+         </mat-expansion-panel-header>
+         <p>9600716156</p>
+       </mat-expansion-panel>
+      <!-- <a style="float: right;"><mat-icon style="size: 30px;">account_circle</mat-icon>{{title | uppercase}}</a>  -->
+     </div>
+
+   </div>
+   <div class="row">
+   <div class="col-sm-2" style="background-color: aquamarine;height: 550px;">
+    <button mat-button [matMenuTriggerFor]="menu" style="float: left;"><mat-icon>menu</mat-icon>Menu</button>
+    
+    <mat-menu #menu="matMenu">
+    <a routerLink='first' style="text-decoration: none; color: blue;"><h3><mat-icon>home</mat-icon><b>User</b></h3></a>
+    <a routerLink='lazy1' style="text-decoration: none; color: blue;"><h3><mat-icon>folder</mat-icon><b>Admin1</b></h3></a>
+    <a routerLink="lazy2" style="text-decoration:none;color:blue;"><h3><mat-icon>chat-area</mat-icon><b>Admin2</b></h3></a>
+  </mat-menu>
+  </div>
+  
+   <div class="col-sm-10" style="background-color: beige;height: 550px;"><!--500-->
+ <!-- <b><h2>DateTime Picker Task:</h2></b><br> -->
+<!-- <form #logic='ngForm' (ngSubmit)="onsubmit(logic)">
+<mat-form-field appearance="fill">
+  <mat-label>Choose a date</mat-label>
+  <input matInput [matDatepicker]="Picker" [(ngModel)]='firstdate' [ngModelOptions]="{standalone: true}" name="firstdate">
+  <mat-datepicker-toggle matSuffix [for]="Picker"></mat-datepicker-toggle>
+  <mat-datepicker #Picker></mat-datepicker>
+  <input  type='time' [(ngModel)]='firsttime' name="firsttime" >
+</mat-form-field>
+<br>
+FromDate:{{firstdate}}<br>
+fromTime:{{firsttime}}
+<br>
+<br>
+<mat-form-field appearance="fill">
+  <mat-label>Choose a date</mat-label>
+  <input matInput [matDatepicker]="picker" [(ngModel)]='seconddate' [ngModelOptions]="{standalone: true}" name="seconddate">
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+  <input  type='time' [(ngModel)]='secondtime' name="secondtime">
+</mat-form-field>
+<button type="submit" >submit</button>
+</form>
+<br>
+ToDate:{{seconddate}}<br>
+ToTime:{{secondtime}}<br>
+YEAR:=======>{{year}}<b>year</b><br>
+MONTH:=====>{{m}}<b>month</b><br>
+Days:=======>{{finaldy}}<b>days</b>{{finalhr}}<b>hr</b>{{minute}}<b>minute</b><br>
+FinalHour:==>{{final}}<b>hr</b>:{{minute}}<b>minute</b>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br> -->
+<router-outlet></router-outlet>
+</div>
+<div class="row" style="background-color: aquamarine;">
+  <div class="col-sm-12" height="60px" >
+      <h1>Welcome</h1>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>

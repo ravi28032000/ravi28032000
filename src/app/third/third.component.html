@@ -1,0 +1,81 @@
+<!-- <!-- <h1>This Api Data:</h1>
+<table border="2">
+    <tr>
+        <th>id</th>
+        <th>Item</th>
+        <th>Amount</th>
+        <th>Reference</th>
+    </tr>
+    <tr *ngFor="let d of data">
+        <td>{{d.id}}</td>
+        <td>{{d.item}}</td>
+        <td>{{d.amount}}</td>
+        <td>{{d.reference}}</td>
+    </tr>
+</table> --><!--
+<div (mouseover)='text=true' (mouseout)="text=false">
+    <li *ngIf="!text">Show</li>
+    <li *ngIf="text">hide</li>
+    <ul *ngIf="text">
+        <ul>
+            <li >first</li>
+            <li >second</li>
+            <li >third</li>
+        </ul>
+        <ul>
+            <li >first</li>
+            <li >second</li>
+            <li >third</li>
+        </ul>
+    </ul>
+</div> 
+<h1>This is new one:</h1>
+<ul>
+<li id="menu-item-7587" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-7587">
+    <a href="https://www.tektutorialshub.com/about-us/" class="menu-link"><span class="ast-icon icon-arrow">
+
+    </span><span class="menu-text">About Us</span>
+    <span class="ast-icon icon-arrow"></span>
+    <span class="sub-arrow"></span></a><button class="ast-menu-toggle" aria-expanded="false">
+        <span class="screen-reader-text">Menu Toggle</span><span class="ast-icon icon-arrow">
+
+        </span></button><ul class="sub-menu">
+            <li id="menu-item-7586" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-7586">
+                <a href="https://www.tektutorialshub.com/privacy-policy/" class="menu-link">
+                    <span class="ast-icon icon-arrow"></span><span class="menu-text">Privacy Policy</span>
+                </a></li><li id="menu-item-7589" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7589">
+                    <a href="https://www.tektutorialshub.com/contact-us/" class="menu-link"><span class="ast-icon icon-arrow">
+
+                </span><span class="menu-text">Contact Us</span></a></li></ul></li></ul>
+
+<h1>Welcome ************************************************Welcome********</h1><br>
+<div class="menu-area">
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Service
+            <ul class="dropdown">
+                <li>Service one</li>
+                <li>Service two</li>
+                <li>Service three</li>
+                <li>Service four</li>
+                <li>Service five</li>
+
+            </ul>
+        </li>
+        <li>Portfolio</li>
+        <li>Contact</li>
+    </ul>
+</div> -->
+<h1>Ng-Content</h1>
+
+
+    <ng-content select='header'>
+        
+    </ng-content>
+    <ng-content select='content'>
+        
+    </ng-content>
+    <ng-content select='footer'>
+        
+    </ng-content>

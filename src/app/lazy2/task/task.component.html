@@ -1,0 +1,40 @@
+<p>task works!</p>
+<h1>Select Task:</h1>
+<br>
+<form [formGroup]="details" (ngSubmit)="another(details)">
+  <mat-form-field>
+    <mat-label>Choose Any One:</mat-label>
+    <input type="text" matInput required [formControl]="myControl"  name="myControl"  [matAutocomplete]="auto">
+  
+    <mat-autocomplete #auto="matAutocomplete">
+      <!-- <mat-option selected>Ravi</mat-option> -->
+      
+      <mat-option *ngFor="let i of filters |async" [value]="i" >{{i}}</mat-option>
+      <!-- <mat-option value="2">Ravi</mat-option>
+      <mat-option value="3">Ram</mat-option> -->
+    </mat-autocomplete>
+  </mat-form-field>
+  
+  <button mat-flat-button color="accent" (click)="addetails()" >load more</button>
+</form>
+<br>
+data:{{wall | json}}
+<hr>
+<hr>
+<br>
+<br>
+<form [formGroup]="details1" (ngSubmit)="another(details1)">
+  <mat-form-field>
+    <mat-label>Choose Any one</mat-label>
+    <input type="text" matInput required [formControl]="mycontrol"  name="mycontrol"  [matAutocomplete]="auto1">
+  
+    <mat-autocomplete #auto1="matAutocomplete">
+    
+<mat-option *ngFor="let i of filter |async " [value]="i" >{{i}}</mat-option>
+
+    </mat-autocomplete>
+    
+</mat-form-field>
+<button mat-flat-button color="accent" (click)="addetails()" >load more</button>
+</form>
+data:{{well | json}}

@@ -1,0 +1,31 @@
+<p>first works!</p>
+<h1>MatSnackBar:</h1>
+<br>
+<form>
+
+<mat-form-field>
+    <mat-label>Enter The Name:</mat-label>
+    <input type="text" matInput required #first>
+</mat-form-field>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<mat-form-field>
+    <mat-label>Enter the Last Nmae:</mat-label>
+    <input type="text" matInput required #second>
+
+</mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button mat-raised-button color='warm' (click)='output(first.value,second.value)'>Submit</button>
+</form>
+<mat-divider></mat-divider>
+<b><h1>Expansion Panel:</h1></b>
+<mat-expansion-panel >
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            This Is Ravi.A
+        </mat-panel-title>
+        <mat-panel-description>
+            ECE
+        </mat-panel-description>
+    </mat-expansion-panel-header>
+    <b *ngIf='panelOpenState'>Now I am visible</b>
+</mat-expansion-panel>
+<button *ngIf="panelOpenStates" (click)="afterall()">click</button>

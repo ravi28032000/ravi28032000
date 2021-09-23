@@ -1,0 +1,24 @@
+
+/* table,tr,td,th{
+    
+    width:auto;
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+    text-align: left;
+    
+} */
+tr:hover {background-color: rgb(202, 202, 80);}
+/* table,tr,td{
+    width:2px;
+
+} */
+
+th{
+    background-color: rgb(171, 233, 171);
+    color: black;
+}
+th,td{
+    text-align: right;
+}
+
+
